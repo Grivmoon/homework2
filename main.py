@@ -1,9 +1,19 @@
-name = input("Введите ваше имя: ")
-age = int(input("Введите ваш возраст: "))
-favorite_color = input("Введите ваш любимый цвет: ")
+import fake_math as fm
+import true_math as tm
 
-future_age = age + 5
 
-print("\nПривет, " + name + "!")
-print(f"Тебе {age} лет, через 5 лет тебе будет {future_age}.")
-print("Твой любимый цвет:", favorite_color)
+
+fake_divide = fm.divide
+true_divide = tm.divide
+
+result1 = fake_divide(69, 3)
+result2 = fake_divide(3, 0)
+result3 = true_divide(49, 7)
+result4 = true_divide(15, 0)
+
+print(result1)
+print(result2)
+print(result3)
+print(result4)
+
+
